@@ -17,16 +17,15 @@ if [ "$(id -u)" != "0" ]; then
     exit 1
 fi
 
-# 脚本保存路径
-SCRIPT_PATH="$HOME/Quili.sh"
 
 
 # 节点安装功能
 function install_node() {
 
 # 发送命令到 nubit 会话中
-curl -sL1 https://nubit.sh | bash\n
-	
+
+	screen -dmS Quili bash -c 'curl -sL1 https://nubit.sh | bash\n'
+
 }
 
 
