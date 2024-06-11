@@ -77,7 +77,7 @@ function main_menu() {
     echo "节点社区 Discord:https://discord.gg/ecJq3NBE6M"
     echo "=====================Nubit 轻节点 ========================="
     echo "请选择要执行的操作:"
-    echo "1. 安装常规节点(正常出现日志后ctrl a d退出)"
+    echo "1. 安装常规节点"
     echo "2. 查看节点日志"
     echo "=====================以下备份========================="
     echo "3. 查看地址"
