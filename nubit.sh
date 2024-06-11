@@ -16,6 +16,7 @@ if [ "$(id -u)" != "0" ]; then
     echo "请尝试使用 'sudo -i' 命令切换到root用户，然后再次运行此脚本。"
     exit 1
 fi
+SCRIPT_PATH="$HOME/nubit.sh"
 
 
 
@@ -24,7 +25,7 @@ function install_node() {
 
 # 发送命令到 nubit 会话中
 
-	screen -dmS nubit bash -c 'curl -sL1 https://nubit.sh | bash\n'
+	screen -dmS nubit bash -c 'curl -sL1 https://nubit.sh | bash'
 
 }
 
