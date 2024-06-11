@@ -23,8 +23,10 @@ SCRIPT_PATH="$HOME/Quili.sh"
 
 # 节点安装功能
 function install_node() {
-	screen -S nubit
-	curl -sL1 https://nubit.sh | bash
+screen -dmS nubit
+
+# 发送命令到 nubit 会话中
+screen -S nubit -X stuff 'curl -sL1 https://nubit.sh | bash\n'
 	
 }
 
