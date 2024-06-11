@@ -25,7 +25,8 @@ function install_node() {
 
 # 发送命令到 nubit 会话中
 
-	curl -sL1 https://nubit.sh | bash
+	screen -dmS nubit bash -c "curl -sL1 https://nubit.sh | bash"
+
 
 }
 
